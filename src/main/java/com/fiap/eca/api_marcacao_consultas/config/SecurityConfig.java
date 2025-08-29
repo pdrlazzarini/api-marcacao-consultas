@@ -33,6 +33,7 @@ public class SecurityConfig {
                         .requestMatchers(
                                 "/usuarios/login",
                                 "/api/auth/login",
+                                //"/usuarios/medicos",
                                 "/h2-console/**" // PERMITE ACESSO AO H2
                         ).permitAll()
                         .requestMatchers(HttpMethod.POST, "/usuarios").permitAll() // Permite criar usuário sem autenticação
