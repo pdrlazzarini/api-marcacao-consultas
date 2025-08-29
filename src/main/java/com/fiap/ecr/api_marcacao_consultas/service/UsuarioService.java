@@ -97,9 +97,4 @@ public class UsuarioService {
 
         return usuario;
     }
-// NOVO: Método público para buscar usuário por email
-    public Usuario buscarPorEmail(String email) {
-        return usuarioRepository.findByEmail(email)
-                .orElseThrow(() -> new RuntimeException("Usuário não encontrado"));
-    }
 }
